@@ -1,0 +1,52 @@
+Primeros ejercicios en js
+1) Programa una función que cuente el número de caracteres de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá 10.
+
+let cadena = prompt ("introduce una cadena de texto")
+
+function numCaract(cadena) {
+  if (cadena == 0) {
+    console.warn("NO introduciste nada");
+  }else {
+   
+    console.log(`tu cadena es: ${cadena} y tiene ${cadena.length} números de caracteres`);
+  }
+  
+}
+numCaract(cadena); 
+
+
+//2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFuncion("Hola Mundo", 4) devolverá "Hola".
+
+ let cadena = prompt("introduce una cadena de texto");
+let cortar = prompt("Cantidad de caracteres a mostrar");
+
+function cortarTexto(cadena, cortar) {
+if (!cadena) {
+  console.warn("NO ingresaste nada");
+  
+}else{
+  console.log(cadena.slice(cadena, cortar));
+}
+}
+cortarTexto(cadena, cortar); 
+
+// 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe. miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'].
+
+ let cadena = prompt ("Ingrese una cadena de texto")
+
+function valorArr(cadena) {
+  console.warn(cadena.split(" "));
+  
+}
+valorArr(cadena) 
+
+
+//4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo. */
+
+ let cadena = prompt ("Digite una cadena de texto")
+let catidad = prompt ("Digite el número de veces a repetir la cadena")
+
+function repetidor(cadena) {
+  console.log(cadena.repeat(catidad));
+}
+repetidor(cadena); 
